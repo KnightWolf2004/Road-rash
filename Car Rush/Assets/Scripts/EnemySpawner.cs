@@ -30,7 +30,7 @@ public class EnemySpawner : MonoBehaviour
             Vector3 spawnpos = new Vector3(Random.Range(maxEnemyLeft, maxEnemyRight), transform.position.y, transform.position.z);
             Instantiate(enemyPrefabs[2], spawnpos, transform.rotation);
             fuel = 10f;
-            timer = 0.5f;
+            timer = Random.Range(0.5f,1.1f);
             
         }
 

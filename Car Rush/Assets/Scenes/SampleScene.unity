@@ -753,6 +753,7 @@ MonoBehaviour:
   timer: 0
   tank: 20
   ui: {fileID: 1958952157}
+  explosionParticle: {fileID: 8443315704496310908, guid: 6ef35fa36e3a65043b2d800600204bdd, type: 3}
 --- !u!50 &925023155
 Rigidbody2D:
   serializedVersion: 4
@@ -1610,7 +1611,7 @@ MonoBehaviour:
   - {fileID: 1167177392}
   - {fileID: 2039457830}
   - {fileID: 1183488600}
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 1412361032}
 --- !u!4 &1958952158
 Transform:
   m_ObjectHideFlags: 0

@@ -14,6 +14,7 @@ public class CarController : MonoBehaviour
     public float timer = 20f;
     public float tank=30f;
     public uiManager ui;
+    public ParticleSystem explosionParticle;
     // Start is called before the first frame update
     void Start()
     {
@@ -53,6 +54,7 @@ public class CarController : MonoBehaviour
             Destroy(gameObject);
             ui.OnCollisionwith();
             Time.timeScale = 1;
+            Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
         }
 
         if(collision.gameObject.tag == "Fuel")
